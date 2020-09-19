@@ -1,11 +1,17 @@
 import React from "react";
-import { SafeAreaView } from "react-native";
+import styled from "styled-components/native";
 import { ProjectList } from "./src/project-list";
+
+const StyledDarkMode = styled.SafeAreaView`
+  color: white;
+  background-color: black;
+  height: 100%;
+`;
 
 export default function App() {
   return (
-    <SafeAreaView>
+    <StyledDarkMode>
       <ProjectList />
-    </SafeAreaView>
+    </StyledDarkMode>
   );
 }
